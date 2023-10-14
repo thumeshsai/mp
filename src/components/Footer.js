@@ -1,13 +1,42 @@
 import React from 'react';
 
 const Footer = () => {
+  const styles = `
+    .footer {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 20px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer li {
+      margin: 0;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  `;
+
   return (
     <footer>
+      <style>{styles}</style>
       <ul>
-        <li><a href="https://example.com">Home</a></li>
-        <li><a href="https://example.com/about">About Us</a></li>
-        <li><a href="https://example.com/services">Services</a></li>
-        <li><a href="https://example.com/contact">Contact</a></li>
+        <li><a href="https://github.com/thumeshsai">GITHUB</a></li>
+        <li><a href="https://www.instagram.com/th_u_me_sh/?next=%2F">INSTAGRAM</a></li>
+        <li><a href="https://www.linkedin.com/in/thumesh-sai-02a025230/">LINKED IN</a></li>
       </ul>
     </footer>
   );
