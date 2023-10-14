@@ -3,41 +3,43 @@ import React from 'react';
 const Footer = () => {
   const styles = `
     .footer {
-      display: flex;
-      justify-content: center;
       background-color: #333;
-      padding: 20px;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
     }
 
-    .footer ul {
+    .footer-nav ul {
       list-style: none;
       padding: 0;
       display: flex;
-      gap: 20px;
+      justify-content: center;
     }
 
-    .footer li {
-      margin: 0;
+    .footer-nav li {
+      margin: 0 20px;
     }
 
-    .footer a {
+    .footer-nav a {
       text-decoration: none;
       color: #fff;
     }
 
-    .footer a:hover {
+    .footer-nav a:hover {
       text-decoration: underline;
     }
   `;
 
   return (
-    <footer>
+    <footer className="footer">
       <style>{styles}</style>
-      <ul>
-        <li><a href="https://github.com/thumeshsai">GITHUB</a></li>
-        <li><a href="https://www.instagram.com/th_u_me_sh/?next=%2F">INSTAGRAM</a></li>
-        <li><a href="https://www.linkedin.com/in/thumesh-sai-02a025230/">LINKED IN</a></li>
-      </ul>
+      <nav className="footer-nav">
+        <ul>
+          <li><a href="https://github.com/thumeshsai">GITHUB</a></li>
+          <li><a href="https://www.instagram.com/th_u_me_sh/?next=%2F">INSTAGRAM</a></li>
+          <li><a href="https://www.linkedin.com/in/thumesh-sai-02a025230/">LINKED IN</a></li>
+        </ul>
+      </nav>
     </footer>
   );
 };
